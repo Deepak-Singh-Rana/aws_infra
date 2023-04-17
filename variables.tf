@@ -8,10 +8,10 @@ variable "instance_type_web" {
 variable "instance_type_app" {
 }
 
-variable "webserver_count" {
+variable "count_webserver" {
   type    = number
 }
 
-variable "appserver_count" {
+variable "count_appserver" {
   type    = number
 }
