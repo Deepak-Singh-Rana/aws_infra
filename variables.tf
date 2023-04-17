@@ -1,4 +1,4 @@
-variable "region" {
+variable "primary_region" {
   description = "AWS Region"
 }
 
@@ -16,7 +16,11 @@ variable "count_appserver" {
   type    = number
 }
 
+
+variable "additional_tags" {
+  type        = map(string)
+}
+
 variable "app_name" {
   type    = string
 }
-
