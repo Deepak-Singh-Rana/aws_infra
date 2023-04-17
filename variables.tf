@@ -15,3 +15,8 @@ variable "count_webserver" {
 variable "count_appserver" {
   type    = number
 }
+
+variable "app_name" {
+  type    = string
+}
+
