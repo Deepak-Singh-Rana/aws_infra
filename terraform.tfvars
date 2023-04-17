@@ -7,5 +7,5 @@ app_name          = BillApp
 
 additional_tags   = {
       "environment"    = "dev"
-      "domain"          = "IT"
+      "domain"         = "IT"
 }
