@@ -17,10 +17,10 @@ variable "count_appserver" {
 }
 
 
-variable "additional_tags" {
+variable "common_tags" {
   type        = map(string)
 }
 
-variable "app_name" {
+variable "zone" {
   type    = string
 }
