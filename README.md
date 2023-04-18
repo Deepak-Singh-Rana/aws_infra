@@ -18,7 +18,7 @@ https://github.com/dsr4hsp/aws_infra
    terraform init
    terraform apply -var-file="dev.tfvars" -auto-approve
   ```
-  Custom environment var files: Dev - dev.tfvars, Production - prod.tfvars 
+  Custom environment variable files: Dev - dev.tfvars, Production - prod.tfvars 
 ## Destroy AWS Infrastructure
 - Terraform Commands 
   ```
