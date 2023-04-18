@@ -1,4 +1,4 @@
-## aws_infra
+# aws_infra
 
 This Terraform code is used to deploy AWS Infrastructure.
 
