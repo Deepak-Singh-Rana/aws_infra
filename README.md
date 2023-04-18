@@ -12,3 +12,10 @@ https://github.com/dsr4hsp/aws_infra
    terraform init
    terraform apply -auto-approve
   ```
+  
+
+## Destroy AWS Infrastructure
+- Terraform Commands 
+  ```
+  terraform destroy -auto-approve
+  ```
