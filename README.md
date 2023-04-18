@@ -13,10 +13,10 @@ https://github.com/dsr4hsp/aws_infra
   ```
 
 ## Deploy AWS Infrastructure
-- Terraform Commands 
+- Terraform Commands ( Sample to deploy dev environment using custom var file)
   ```
    terraform init
-   terraform apply -auto-approve
+   terraform apply -var-file="dev.tfvars" -auto-approve
   ```
   
 ## Destroy AWS Infrastructure
