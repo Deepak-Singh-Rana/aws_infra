@@ -5,7 +5,7 @@ This Terraform code is used to deploy AWS Infrastructure.
 https://github.com/dsr4hsp/aws_infra
 ```
 
-## Clone The GIT Repository to Local Machine
+## Clone the GIT Repository to Local Machine
 - GIT Commands
   ```
    git clone https://github.com/dsr4hsp/aws_infra
