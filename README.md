@@ -5,6 +5,12 @@ This Terraform code is used to deploy AWS Infrastructure.
 https://github.com/dsr4hsp/aws_infra
 ```
 
+## Clone the GIT repository to local machine
+- GIT Commands
+  ```
+   git clone https://github.com/dsr4hsp/aws_infra
+   cd aws_infra
+  ```
 
 ## Deploy AWS Infrastructure
 - Terraform Commands 
@@ -13,7 +19,6 @@ https://github.com/dsr4hsp/aws_infra
    terraform apply -auto-approve
   ```
   
-
 ## Destroy AWS Infrastructure
 - Terraform Commands 
   ```
