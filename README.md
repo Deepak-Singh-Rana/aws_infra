@@ -14,6 +14,7 @@ https://github.com/dsr4hsp/aws_infra
 
 ## Deploy AWS Infrastructure
 - Terraform Commands ( Sample to deploy dev environment using custom var file)
+  Custom environment var files: Dev - dev.tfvars, Production - prod.tfvars 
   ```
    terraform init
    terraform apply -var-file="dev.tfvars" -auto-approve
