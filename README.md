@@ -20,7 +20,7 @@ https://github.com/dsr4hsp/aws_infra
   ```
   Custom environment variable files: Dev - dev.tfvars, Production - prod.tfvars 
 ## Destroy AWS Infrastructure
-- Terraform Commands 
+- Terraform Commands ( Sample to destroy dev environment using custom var file)
   ```
-  terraform destroy -auto-approve
+  terraform destroy -var-file="dev.tfvars" -auto-approve
   ```
