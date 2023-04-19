@@ -12,7 +12,7 @@ module "vpc" {
   enable_nat_gateway = true
   enable_vpn_gateway = true
 
-  tags       = merge(var.common_tags, { Name = "${var.zone}", CreationTime = local.tstamp})
+  tags       = merge({ Name = "${var.zone}", CreationTime = local.tstamp})
 
 }
 */
