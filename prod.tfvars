@@ -6,8 +6,8 @@ count_appserver   = 2
 zone              = "prod"
 
 
-common_tags       = {
-      "env"            = "prd"
-      "domain"         = "IT"
-      "app_name"       = "BillApp"
+common_tags = {
+  "env"      = "prd"
+  "domain"   = "IT"
+  "app_name" = "BillApp"
 }
