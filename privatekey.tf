@@ -1,4 +1,3 @@
-/*
 resource "tls_private_key" "SSHKey" {
   algorithm = "RSA"
   rsa_bits  = 4096
@@ -17,4 +16,4 @@ resource "local_file" "PrivateKey" {
   filename        = "terraform-key.pem"
   file_permission = "0400"
 }
-*/
+
