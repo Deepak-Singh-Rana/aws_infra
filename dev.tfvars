@@ -15,16 +15,18 @@ common_tags = {
 ec2_conf = [
   {
     "tier"                    = "web",
-    "inst_cnt"                = "3",
-    "inst_type"               = "t2.micro",
+    "inst_cnt"                = "2",
+    "inst_desc"              = ["Green", "Red"],
+    "inst_type"               = "t2.nano",
     "subnet_id"               = "subnet-e17177a8",
 #    "subnet_id"               = output.pub_subs[0],
 #    "vpc_security_group_ids" = ["sg-012","sg-023"]
   },
   {
     "tier"                    = "app",
-    "inst_type"               = "t2.medium",
+    "inst_type"               = "t2.micro",
     "inst_cnt"                = "2"
+    "inst_desc"               = ["Green", "Red"],
     "subnet_id"               = "subnet-e17177a8",
 #    "subnet_id"               = output.pvt_subs[1]
 #    "vpc_security_group_ids" = ["sg-0123"]

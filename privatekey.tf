@@ -16,4 +16,3 @@ resource "local_file" "PrivateKey" {
   filename        = "terraform-key.pem"
   file_permission = "0400"
 }
-
