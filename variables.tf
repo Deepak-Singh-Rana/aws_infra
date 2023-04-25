@@ -10,7 +10,7 @@ variable "zone" {
   type = string
 }
 
-variable "cidr" {
+variable "vpc_cidr" {
   type = string
 }
 
@@ -24,4 +24,12 @@ variable "public_subnets" {
 
 variable "ec2_conf" {
   default = [{}]
+}
+
+variable "appsg_ports" {
+  type = list(number)
+}
+
+variable "websg_ports" {
+  type = list(number)
 }

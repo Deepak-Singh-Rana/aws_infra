@@ -2,6 +2,7 @@ locals {
   tstamp = formatdate("DD-MMM-YYYY:hh-mm", timestamp())
 }
 
+
 /*
 locals {
   ser_conf = [
@@ -18,8 +19,8 @@ locals {
 */
 
 locals {
-   listA = ["a", "b"]
-   listB = ["f", "g"]
+   listA = ["a"]
+   listB = ["f"]
    all_subnets = concat(local.listA, local.listB)
 }
 
