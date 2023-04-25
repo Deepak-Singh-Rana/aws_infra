@@ -6,6 +6,13 @@ terraform {
       version = "~> 4.0"
     }
   }
+
+  backend "s3" {
+    bucket         = "dsr-terraform-backend"
+    key            = "nonprod/vpc_terraform.tfstate"
+    region         = "ap-southeast-2"
+    dynamodb_table = "terraform-state-lockig"
+  }
 }
 
 
