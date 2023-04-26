@@ -18,6 +18,7 @@ common_tags = {
    "app_name" = "BillApp"
 }
 
+/*
 # EC2 configuration
 ec2_conf = [
   {
@@ -25,8 +26,8 @@ ec2_conf = [
     "inst_cnt"                = "1",
     "inst_desc"               = ["Green", "Red"],
     "inst_type"               = "t2.nano",
-    "subnet_id"               = "subnet-e17177a8",
-#    "subnet_id"               = output.pub_subs[0],
+    "subnet_id"               = "public_subnets",
+#    "subnet_id"               = module.vpc.public_subnets.*,
 #    "vpc_security_group_ids" = ["sg-012","sg-023"]
   },
   {
@@ -34,12 +35,12 @@ ec2_conf = [
     "inst_type"               = "t2.micro",
     "inst_cnt"                = "1"
     "inst_desc"               = ["Green", "Red"],
-    "subnet_id"               = "subnet-e17177a8",
+    "subnet_id"               = "private_subnets",
 #    "subnet_id"               = output.pvt_subs[1]
 #    "vpc_security_group_ids" = ["sg-0123"]
   }
 ]
-
+*/
 
 
 

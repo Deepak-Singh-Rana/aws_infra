@@ -15,7 +15,7 @@ module "vpc" {
 
 }
 
-/*
+
 resource "aws_instance" "servers" {
      for_each = {for server in local.instances: server.instance_name =>  server}
   
@@ -30,4 +30,3 @@ resource "aws_instance" "servers" {
   EOF
      tags       = merge(var.common_tags, { Name = "${each.value.instance_name}", CreationTime = local.tstamp })
 }
-*/
