@@ -1,4 +1,4 @@
-/*
+# Deploy security groups
 resource "aws_security_group" "websg" {
   description = "Web security group"
   vpc_id      = "${module.vpc.vpc_id}"
@@ -48,5 +48,5 @@ resource "aws_security_group" "appsg" {
 
   tags       = merge({ Name = "appsg-${var.zone}", CreationTime = local.tstamp })
 }
-*/
+
 

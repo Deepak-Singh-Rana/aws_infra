@@ -1,3 +1,4 @@
+# Deploy VPC and subnets
 module "vpc" {
   source = "terraform-aws-modules/vpc/aws"
 
@@ -16,17 +17,18 @@ module "vpc" {
 }
 
 
+# Deploy EC2 instances
 resource "aws_instance" "servers" {
      for_each = {for server in local.instances: server.instance_name =>  server}
   
-     ami           = data.aws_ami.amazon_linux_ami.id
-     instance_type = each.value.instance_type
-     subnet_id     = each.value.subnet_id
-     key_name      = aws_key_pair.KeyPair.key_name
-#  vpc_security_group_ids = each.value.security_groups
+     ami                    = data.aws_ami.amazon_linux_ami.id
+     instance_type          = each.value.instance_type
+     subnet_id              = each.value.subnet_id
+     key_name               = aws_key_pair.KeyPair.key_name
+     vpc_security_group_ids = each.value.security_groups
      user_data = <<EOF
-  sudo amazon-linux-extras install -y nginx1
-  sudo systemctl start nginx
-  EOF
+             sudo amazon-linux-extras install -y nginx1
+             sudo systemctl start nginx
+     EOF
      tags       = merge(var.common_tags, { Name = "${each.value.instance_name}", CreationTime = local.tstamp })
 }

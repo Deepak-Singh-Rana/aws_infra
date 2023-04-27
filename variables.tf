@@ -22,8 +22,12 @@ variable "public_subnets" {
   type = list(string)
 }
 
-variable "ec2_conf" {
-  default = [{}]
+variable "appsgs" {
+  type = list(string)
+}
+
+variable "websgs" {
+  type = list(string)
 }
 
 variable "appsg_ports" {
@@ -33,3 +37,5 @@ variable "appsg_ports" {
 variable "websg_ports" {
   type = list(number)
 }
+
+
