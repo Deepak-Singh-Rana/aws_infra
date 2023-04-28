@@ -8,16 +8,16 @@ ec2_conf = [
   {
     "tier"        = "web",
     "inst_cnt"    = "1",
-    "inst_type"   = "t2.nano",
+    "inst_type"   = "t2.micro",
     "subnets"     = module.vpc.public_subnets.*,
-    "vpc_sg_ids"  = [${websgs}.name, ${appsgs}.name]
+    "vpc_sg_ids"  = [aws_security_group.websg.id, aws_security_group.appsg.id]
   },
   {
     "tier"        = "app",
-    "inst_type"   = "t2.micro",
-    "inst_cnt"    = "2"
+    "inst_type"   = "t2.nano",
+    "inst_cnt"    = "1"
     "subnets"     = module.vpc.private_subnets.*,
-    "vpc_sg_ids"  = [${appsgs}.name]
+    "vpc_sg_ids"  = [aws_security_group.appsg.id]
   }
  ]
 }
